@@ -1,4 +1,19 @@
 <?php
+
+use Illuminate\Support\Facades\Mail;
+use App\Mail\TestEmail;
+
+Route::get('/test-email', function () {
+    $details = [
+        'title' => 'Mailtrap Test Email',
+        'body' => 'This is a test email sent via Mailtrap.'
+    ];
+
+    Mail::to('zevaiduncan2@gmail.com')->send(new TestEmail($details));
+
+    return 'Test email sent!';
+});
+
 Route::get('/', 'TicketController@create');
 Route::get('/home', function () {
     $route = Gate::denies('dashboard_access') ? 'admin.tickets.index' : 'admin.home';

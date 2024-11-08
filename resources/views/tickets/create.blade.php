@@ -22,7 +22,7 @@
                <img src="{{ asset('img/deftec-logo.png') }}" alt="DEFTEC Logo" class="img-fluid logo-image">
             </div>
             <div class="col-md-8 text-white text-left">
-               <h1 class="display-4">IT-WORKSHOP</h1>
+               <h1 class="display-4">Computer Maintenance Booking System</h1>
                <p>A user-friendly solution designed to streamline the reporting and tracking of computer issues. With easy ticket creation, document attachments, and efficient problem resolution, it simplifies IT-related tasks for users and ensures prompt assistance from DEFTEC technicians. Welcome to a more organized and efficient way of managing computer matters.</p>
 
             </div>
